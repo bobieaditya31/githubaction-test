@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  image: node:18
+  script:
+    - echo "Installing dependencies"
+    - npm install
+
+test:
+  stage: test
+  image: node:18
+  script:
+    - npm test
