@@ -4,7 +4,7 @@ stages:
 test-job:
   stage: test
   tags:
-    - wsl   # WAJIB sesuai runner
+    - wsl
   script:
-    - echo "Runner WSL sudah jalan!"
-    - date
+    - echo "CI/CD WSL Runner berhasil 🎉"
+    - uname -a
